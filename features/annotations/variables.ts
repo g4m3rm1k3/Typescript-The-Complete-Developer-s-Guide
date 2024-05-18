@@ -40,10 +40,15 @@ console.log(coordinates); // {x:10, y:20};
 // 2) When we declare a variable on one line
 // and initalize it later
 let words = ['red', 'green','blue'];
-let foundWord;
+let foundWord:boolean;
 
 for (let i = 0; i < words.length; i++){
   if (words[i] === 'green') {
     foundWord = true;
   }
 }
+
+// 3) Variable whose type cannot be inferred correctly
+let numbers = [-10, -1, 12];
+let numberAboverZero;
+
